@@ -17,15 +17,6 @@ class TextFieldTVC: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
-//    func preparaUI () {
-//        switch parentVC {
-//        case parentVC as LoginVC :
-//            preViewLbl.text = ""
-//        default :
-//            return
-//        }
-//    }
     
 }
 
