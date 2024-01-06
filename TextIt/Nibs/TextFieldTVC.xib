@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="TextFieldTVC" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextFieldTVC" rowHeight="90" id="KGk-i7-Jjw" customClass="TextFieldTVC" customModule="TextIt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3T-9n-7MJ">
+                        <rect key="frame" x="19.999999999999996" y="10" width="37.666666666666657" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="bph-Uo-239"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                        <color key="textColor" name="TitleColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QX3-fy-Myk">
+                        <rect key="frame" x="20" y="24" width="337" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="v5A-mV-iAh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jwx-Hk-GXt">
+                        <rect key="frame" x="20" y="64" width="337" height="1"/>
+                        <color key="backgroundColor" name="Lines"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="VIb-CJ-Vrs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QX3-fy-Myk" firstAttribute="top" secondItem="w3T-9n-7MJ" secondAttribute="bottom" id="L5h-hG-N7E"/>
+                    <constraint firstItem="QX3-fy-Myk" firstAttribute="leading" secondItem="w3T-9n-7MJ" secondAttribute="leading" id="VWX-iK-8JV"/>
+                    <constraint firstItem="Jwx-Hk-GXt" firstAttribute="top" secondItem="QX3-fy-Myk" secondAttribute="bottom" id="W3w-QY-oKz"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="w3T-9n-7MJ" secondAttribute="trailing" constant="20" id="b25-ir-zmO"/>
+                    <constraint firstItem="w3T-9n-7MJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="dY6-wH-HJS"/>
+                    <constraint firstItem="w3T-9n-7MJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="eDT-RH-Gvu"/>
+                    <constraint firstAttribute="trailing" secondItem="QX3-fy-Myk" secondAttribute="trailing" constant="20" id="iR2-iz-f9s"/>
+                    <constraint firstItem="Jwx-Hk-GXt" firstAttribute="trailing" secondItem="QX3-fy-Myk" secondAttribute="trailing" id="mRK-Vn-F3o"/>
+                    <constraint firstItem="Jwx-Hk-GXt" firstAttribute="leading" secondItem="QX3-fy-Myk" secondAttribute="leading" id="sWg-L9-yq6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="preViewLbl" destination="w3T-9n-7MJ" id="Ekk-1r-GjB"/>
+                <outlet property="txtField" destination="QX3-fy-Myk" id="IO9-tj-WGF"/>
+            </connections>
+            <point key="canvasLocation" x="92.36641221374046" y="9.5070422535211279"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Lines">
+            <color red="0.80392156862745101" green="0.81960784313725488" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TitleColor">
+            <color red="0.23921568627450981" green="0.29019607843137257" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
