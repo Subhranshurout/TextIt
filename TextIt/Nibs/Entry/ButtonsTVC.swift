@@ -36,6 +36,13 @@ class ButtonsTVC: UITableViewCell {
             layer.masksToBounds = true
             loginBtn.setTitle("Log in", for: .normal)
             
+        case parentVC as SignupVC :
+            loginBtn.titleLabel?.font = UIFont(name: "Poppins-Bold", size: 16)
+            loginBtn.backgroundColor = UIColor.title
+            loginBtn.layer.cornerRadius = 16
+            layer.masksToBounds = true
+            loginBtn.setTitle("Create an account", for: .normal)
+            
         default:
             print("Not")
         }
@@ -44,19 +51,23 @@ class ButtonsTVC: UITableViewCell {
     @IBAction func loginBtnClick(_ sender : UIButton) {
         switch parentVC {
         case parentVC as SplashVC :
-            parentVC.loginBtnClick(with: "LoginVC")
+            parentVC.loginBtnClick(with: "SignupVC")
+        case parentVC as SignupVC :
+            parentVC.loginBtnClick(with: "KpTabBarVC")
+        case parentVC as LoginVC :
+            parentVC.loginBtnClick(with: "KpTabBarVC")
         default:
             print("Not")
         }
     }
     @IBAction func smallLoginBtnClick (_ sender : UIButton) {
-//        switch parentVC {
-//        case parentVC as SplashVC :
-//            
-//            
-//        default:
-//            print("Not")
-//        }
+        switch parentVC {
+        case parentVC as SplashVC :
+            parentVC.loginBtnClick(with: "LoginVC")
+            
+        default:
+            print("Not")
+        }
     }
     
 }

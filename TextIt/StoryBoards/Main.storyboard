@@ -23,10 +23,11 @@
                         <viewLayoutGuide key="safeArea" id="tv7-sN-PZq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Dl0-1U-346"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8g8-JV-bIx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1388" y="7"/>
+            <point key="canvasLocation" x="2582" y="774"/>
         </scene>
         <!--Walk ThroughVC-->
         <scene sceneID="tne-QT-ifu">
@@ -37,7 +38,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="P4t-pb-6o8">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="-2" width="375" height="816"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector" translatesAutoresizingMaskIntoConstraints="NO" id="fp8-TI-BVy">
                                 <rect key="frame" x="20" y="258" width="335" height="316"/>
@@ -55,10 +56,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="P4t-pb-6o8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0Zo-SQ-HUT"/>
+                            <constraint firstItem="P4t-pb-6o8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-2" id="0Zo-SQ-HUT"/>
                             <constraint firstItem="fp8-TI-BVy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3p5-nM-TBE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fp8-TI-BVy" secondAttribute="trailing" constant="20" id="6Wg-pd-0CV"/>
-                            <constraint firstAttribute="bottom" secondItem="P4t-pb-6o8" secondAttribute="bottom" id="NHz-dl-DdG"/>
+                            <constraint firstAttribute="bottom" secondItem="P4t-pb-6o8" secondAttribute="bottom" constant="-2" id="NHz-dl-DdG"/>
                             <constraint firstItem="ivR-RN-fl2" firstAttribute="centerX" secondItem="fp8-TI-BVy" secondAttribute="centerX" id="OuC-de-jyV"/>
                             <constraint firstItem="fp8-TI-BVy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="10" id="dSI-Qp-NKL"/>
                             <constraint firstItem="P4t-pb-6o8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gY7-1t-SuB"/>
@@ -150,6 +151,7 @@
                     <connections>
                         <outlet property="myTable" destination="fUv-SI-Yry" id="104-WU-7Qi"/>
                         <segue destination="3ft-Qn-JU5" kind="show" identifier="LoginVC" id="Zu0-FA-lnu"/>
+                        <segue destination="Vwi-4x-c9P" kind="show" identifier="SignupVC" id="gd7-jH-w6Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OMT-Xl-sLl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -211,7 +213,7 @@
                     <navigationItem key="navigationItem" id="nEe-Pb-tay"/>
                     <connections>
                         <outlet property="myTable" destination="qpU-tv-S4M" id="eWP-5F-Rmp"/>
-                        <segue destination="Vwi-4x-c9P" kind="show" identifier="SplashVC" id="ptK-AZ-Cz8"/>
+                        <segue destination="tBJ-AE-epE" kind="show" identifier="KpTabBarVC" id="Yei-tD-rkE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nZl-hb-9OR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -226,32 +228,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RiQ-iE-qXs">
-                                <rect key="frame" x="0.0" y="50" width="375" height="728"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RiQ-iE-qXs">
+                                <rect key="frame" x="0.0" y="100" width="375" height="678"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Vwi-4x-c9P" id="pLN-pD-aAG"/>
                                     <outlet property="delegate" destination="Vwi-4x-c9P" id="0Pm-ko-7wd"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMm-eb-lBj">
+                                <rect key="frame" x="0.0" y="50" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJk-oA-U0F">
+                                        <rect key="frame" x="24" y="13" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="23h-r8-VlE"/>
+                                            <constraint firstAttribute="height" constant="24" id="BpZ-wz-VII"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Back"/>
+                                        <connections>
+                                            <action selector="parentBack:" destination="Vwi-4x-c9P" eventType="touchUpInside" id="Mkc-9b-Opx"/>
+                                            <action selector="parentBack:" destination="3ft-Qn-JU5" eventType="touchUpInside" id="rdF-Jv-Fri"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8Om-aZ-eRa"/>
+                                    <constraint firstItem="ZJk-oA-U0F" firstAttribute="centerY" secondItem="hMm-eb-lBj" secondAttribute="centerY" id="JJm-57-d5a"/>
+                                    <constraint firstItem="ZJk-oA-U0F" firstAttribute="leading" secondItem="hMm-eb-lBj" secondAttribute="leading" constant="24" id="orf-Ye-FXy"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="G14-QS-acG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="RiQ-iE-qXs" firstAttribute="trailing" secondItem="G14-QS-acG" secondAttribute="trailing" id="077-Ne-zrG"/>
-                            <constraint firstItem="RiQ-iE-qXs" firstAttribute="top" secondItem="G14-QS-acG" secondAttribute="top" id="Ak9-o2-tV3"/>
+                            <constraint firstItem="hMm-eb-lBj" firstAttribute="leading" secondItem="dIo-k2-bgZ" secondAttribute="leading" id="6V1-5n-cnK"/>
+                            <constraint firstItem="G14-QS-acG" firstAttribute="trailing" secondItem="hMm-eb-lBj" secondAttribute="trailing" id="6x4-xS-guT"/>
+                            <constraint firstItem="hMm-eb-lBj" firstAttribute="top" secondItem="G14-QS-acG" secondAttribute="top" id="jlB-ZR-Iqc"/>
                             <constraint firstItem="RiQ-iE-qXs" firstAttribute="leading" secondItem="G14-QS-acG" secondAttribute="leading" id="mnl-y5-k1c"/>
+                            <constraint firstItem="RiQ-iE-qXs" firstAttribute="top" secondItem="hMm-eb-lBj" secondAttribute="bottom" id="pSi-WS-uRs"/>
                             <constraint firstItem="G14-QS-acG" firstAttribute="bottom" secondItem="RiQ-iE-qXs" secondAttribute="bottom" id="u2C-tQ-CpS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oiD-io-qgJ"/>
                     <connections>
                         <outlet property="myTable" destination="RiQ-iE-qXs" id="7CQ-9H-9k2"/>
+                        <segue destination="tBJ-AE-epE" kind="show" identifier="KpTabBarVC" id="kyN-R7-cfY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OEI-S0-hz2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3266.4000000000001" y="6.6502463054187197"/>
+            <point key="canvasLocation" x="1637.5999999999999" y="773.64532019704438"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="l6y-WY-6xV">
@@ -271,6 +301,9 @@
             <point key="canvasLocation" x="36" y="3.6945812807881775"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Yei-tD-rkE"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Back" width="24" height="24"/>
         <image name="Splash" width="1125" height="2436"/>

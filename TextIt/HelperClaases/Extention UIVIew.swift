@@ -31,30 +31,31 @@ class SingleRoundCornerView: UIView {
 }
 
 class RoundView: UIView {
-    @IBInspectable var cornerRadious: CGFloat = 0 {
-        didSet {
-            if cornerRadious == 0 {
-                layer.cornerRadius = (self.frame.height * _widthRatio) / 2
-            } else {
-                layer.cornerRadius = cornerRadious * _widthRatio
-            }
-        }
-    }
-    
-    @IBInspectable var borderColor: UIColor = UIColor.clear{
-        didSet {
-            layer.borderColor = borderColor.cgColor
-        }
-    }
-    
-    @IBInspectable var borderWidth: CGFloat = 0 {
-        didSet {
-            layer.borderWidth = borderWidth
-        }
-    }
+//    @IBInspectable var cornerRadious: CGFloat = 0 {
+//        didSet {
+//            if cornerRadious == 0 {
+//                layer.cornerRadius = (self.frame.height * _widthRatio) / 2
+//            } else {
+//                layer.cornerRadius = cornerRadious * _widthRatio
+//            }
+//        }
+//    }
+//    
+//    @IBInspectable var borderColor: UIColor = UIColor.clear{
+//        didSet {
+//            layer.borderColor = borderColor.cgColor
+//        }
+//    }
+//    
+//    @IBInspectable var borderWidth: CGFloat = 0 {
+//        didSet {
+//            layer.borderWidth = borderWidth
+//        }
+//    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        layer.cornerRadius = frame.size.width / 2
         self.layer.masksToBounds = true
     }
 }

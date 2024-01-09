@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoriesCVC" id="gTV-IL-0wX" customClass="StoriesCVC" customModule="TextIt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="87" height="95"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="87" height="95"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ei5-Nk-COw">
+                        <rect key="frame" x="0.0" y="0.0" width="87" height="95"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSJ-2K-Swj" customClass="RoundedView" customModule="TextIt" customModuleProvider="target">
+                                <rect key="frame" x="11" y="5" width="65" height="65"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileImg" translatesAutoresizingMaskIntoConstraints="NO" id="vyF-I2-SlS" customClass="RoundedImageView" customModule="TextIt" customModuleProvider="target">
+                                        <rect key="frame" x="5" y="5" width="55" height="55"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="vyF-I2-SlS" firstAttribute="top" secondItem="PSJ-2K-Swj" secondAttribute="top" constant="5" id="Grs-7v-ArU"/>
+                                    <constraint firstItem="vyF-I2-SlS" firstAttribute="leading" secondItem="PSJ-2K-Swj" secondAttribute="leading" constant="5" id="NQ3-1m-TvP"/>
+                                    <constraint firstAttribute="trailing" secondItem="vyF-I2-SlS" secondAttribute="trailing" constant="5" id="NfX-vo-ZeQ"/>
+                                    <constraint firstAttribute="height" constant="65" id="Yiy-JY-PAc"/>
+                                    <constraint firstAttribute="width" constant="65" id="h8k-2G-yZp"/>
+                                    <constraint firstAttribute="bottom" secondItem="vyF-I2-SlS" secondAttribute="bottom" constant="5" id="p3W-Yv-d9E"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKl-xi-riY">
+                                <rect key="frame" x="10" y="75" width="67" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="pqr-Su-xFS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CKl-xi-riY" secondAttribute="trailing" id="2BJ-ih-Qey"/>
+                            <constraint firstItem="CKl-xi-riY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ei5-Nk-COw" secondAttribute="leading" id="7nN-HR-ksv"/>
+                            <constraint firstItem="PSJ-2K-Swj" firstAttribute="centerX" secondItem="Ei5-Nk-COw" secondAttribute="centerX" id="9WA-ie-7Sb"/>
+                            <constraint firstItem="CKl-xi-riY" firstAttribute="top" secondItem="PSJ-2K-Swj" secondAttribute="bottom" constant="5" id="QaE-TR-rK9"/>
+                            <constraint firstItem="CKl-xi-riY" firstAttribute="centerX" secondItem="PSJ-2K-Swj" secondAttribute="centerX" id="RsO-mh-a3f"/>
+                            <constraint firstItem="PSJ-2K-Swj" firstAttribute="top" secondItem="Ei5-Nk-COw" secondAttribute="top" constant="5" id="arc-mN-zQr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ei5-Nk-COw" secondAttribute="trailing" id="9Yj-4X-y6k"/>
+                <constraint firstItem="Ei5-Nk-COw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Dus-gT-WjJ"/>
+                <constraint firstItem="Ei5-Nk-COw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TqD-BF-2Tj"/>
+                <constraint firstAttribute="bottom" secondItem="Ei5-Nk-COw" secondAttribute="bottom" id="bwq-l8-Yl3"/>
+            </constraints>
+            <size key="customSize" width="51" height="95"/>
+            <connections>
+                <outlet property="nameLbl" destination="CKl-xi-riY" id="5wU-gf-XO3"/>
+                <outlet property="roundImageView" destination="vyF-I2-SlS" id="Nck-47-6vF"/>
+                <outlet property="roundView" destination="PSJ-2K-Swj" id="bz4-0Z-v3W"/>
+            </connections>
+            <point key="canvasLocation" x="90.839694656488547" y="-34.859154929577464"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ProfileImg" width="3840" height="2160"/>
+    </resources>
+</document>

@@ -41,7 +41,8 @@ extension LoginVC : UITableViewDelegate, UITableViewDataSource {
             cell.prePareUI()
         } else if let cell = cell as? TextFieldTVC {
             cell.preViewLbl.text = cellType.cellTitle
-            
+            cell.txtField.keyboardType = cellType.keyboardType
+            cell.txtField.returnKeyType = cellType.returnKeyType
         }
         
     }

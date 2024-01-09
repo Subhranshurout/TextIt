@@ -33,6 +33,14 @@
 		69B29CFA2B49D17600047791 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69B29CF72B49D17500047791 /* Poppins-Black.ttf */; };
 		69B29CFB2B49D17600047791 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69B29CF82B49D17600047791 /* Poppins-Bold.ttf */; };
 		69B29CFC2B49D17600047791 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69B29CF92B49D17600047791 /* Poppins-Light.ttf */; };
+		69B448D02B4C707D001FE841 /* CallsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B448CF2B4C707D001FE841 /* CallsVC.swift */; };
+		69B448D32B4C71B8001FE841 /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B448D22B4C71B8001FE841 /* ContactsVC.swift */; };
+		69B448D62B4C7348001FE841 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B448D52B4C7348001FE841 /* SettingsVC.swift */; };
+		69C19CAB2B4A7AFE00410E42 /* MessagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C19CAA2B4A7AFE00410E42 /* MessagesVC.swift */; };
+		69C19CAF2B4A8AEC00410E42 /* StoriesCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C19CAD2B4A8AEC00410E42 /* StoriesCVC.swift */; };
+		69C19CB02B4A8AEC00410E42 /* StoriesCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C19CAE2B4A8AEC00410E42 /* StoriesCVC.xib */; };
+		69C19CB22B4A8E5100410E42 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C19CB12B4A8E5100410E42 /* RoundedImageView.swift */; };
+		69C19CB42B4A8F2800410E42 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C19CB32B4A8F2800410E42 /* RoundedView.swift */; };
 		69C836042B47B47C00179FB1 /* KpTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C836032B47B47C00179FB1 /* KpTabBarVC.swift */; };
 		69C836062B47B4BC00179FB1 /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C836052B47B4BC00179FB1 /* TabBarView.xib */; };
 		69C836082B47B4FF00179FB1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C836072B47B4FF00179FB1 /* Constants.swift */; };
@@ -41,6 +49,8 @@
 		69C8360F2B47BABA00179FB1 /* Calls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69C8360E2B47BABA00179FB1 /* Calls.storyboard */; };
 		69C836112B47BAC800179FB1 /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69C836102B47BAC800179FB1 /* Contact.storyboard */; };
 		69C836132B47BAD000179FB1 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69C836122B47BAD000179FB1 /* Settings.storyboard */; };
+		69F1C5F12B4AF0F00001AFCF /* MesagesListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F1C5EF2B4AF0F00001AFCF /* MesagesListTVC.swift */; };
+		69F1C5F22B4AF0F00001AFCF /* MesagesListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F1C5F02B4AF0F00001AFCF /* MesagesListTVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +82,14 @@
 		69B29CF72B49D17500047791 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
 		69B29CF82B49D17600047791 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		69B29CF92B49D17600047791 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		69B448CF2B4C707D001FE841 /* CallsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsVC.swift; sourceTree = "<group>"; };
+		69B448D22B4C71B8001FE841 /* ContactsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
+		69B448D52B4C7348001FE841 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		69C19CAA2B4A7AFE00410E42 /* MessagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesVC.swift; sourceTree = "<group>"; };
+		69C19CAD2B4A8AEC00410E42 /* StoriesCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCVC.swift; sourceTree = "<group>"; };
+		69C19CAE2B4A8AEC00410E42 /* StoriesCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoriesCVC.xib; sourceTree = "<group>"; };
+		69C19CB12B4A8E5100410E42 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		69C19CB32B4A8F2800410E42 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		69C836032B47B47C00179FB1 /* KpTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KpTabBarVC.swift; sourceTree = "<group>"; };
 		69C836052B47B4BC00179FB1 /* TabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarView.xib; sourceTree = "<group>"; };
 		69C836072B47B4FF00179FB1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -80,6 +98,8 @@
 		69C8360E2B47BABA00179FB1 /* Calls.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calls.storyboard; sourceTree = "<group>"; };
 		69C836102B47BAC800179FB1 /* Contact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
 		69C836122B47BAD000179FB1 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		69F1C5EF2B4AF0F00001AFCF /* MesagesListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesagesListTVC.swift; sourceTree = "<group>"; };
+		69F1C5F02B4AF0F00001AFCF /* MesagesListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MesagesListTVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +136,10 @@
 		691749272B48720A00AB7123 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				69B448D42B4C7338001FE841 /* Settings */,
+				69B448D12B4C71A7001FE841 /* Contacts */,
+				69B448CE2B4C706B001FE841 /* Calls */,
+				69C19CA92B4A7AD700410E42 /* Messages */,
 				691749282B48722D00AB7123 /* Entry */,
 			);
 			path = ViewControllers;
@@ -127,8 +151,8 @@
 				6917490D2B486DE000AB7123 /* EntryModel.swift */,
 				6917490F2B486DE000AB7123 /* WalkThroughVC.swift */,
 				6917490E2B486DE000AB7123 /* SplashVC.swift */,
-				6917490C2B486DE000AB7123 /* SignupVC.swift */,
 				691749112B486DE000AB7123 /* LoginVC.swift */,
+				6917490C2B486DE000AB7123 /* SignupVC.swift */,
 				69B29CF02B49C5F100047791 /* AboutMeTVC.swift */,
 			);
 			path = Entry;
@@ -157,7 +181,6 @@
 				69AE05332B471D3A00D0C162 /* Nibs */,
 				691749252B4871F500AB7123 /* Classes */,
 				69B29CF22B49C6CB00047791 /* HelperClaases */,
-				69C836092B47B51500179FB1 /* Extention UIVIew.swift */,
 				69B29CF52B49D13000047791 /* Poppins-Regular.ttf */,
 				69B29CF72B49D17500047791 /* Poppins-Black.ttf */,
 				69B29CF82B49D17600047791 /* Poppins-Bold.ttf */,
@@ -176,12 +199,8 @@
 			children = (
 				69C836032B47B47C00179FB1 /* KpTabBarVC.swift */,
 				69C836052B47B4BC00179FB1 /* TabBarView.xib */,
-				6917491B2B4871C900AB7123 /* ButtonsTVC.swift */,
-				6917491A2B4871C900AB7123 /* ButtonsTVC.xib */,
-				691749192B4871C900AB7123 /* SocialTVC.swift */,
-				6917491C2B4871C900AB7123 /* SocialTVC.xib */,
-				6917491E2B4871C900AB7123 /* TextFieldTVC.swift */,
-				6917491D2B4871C900AB7123 /* TextFieldTVC.xib */,
+				69C19CA82B4A7AB000410E42 /* Entry */,
+				69C19CAC2B4A8AC400410E42 /* Messages */,
 			);
 			path = Nibs;
 			sourceTree = "<group>";
@@ -189,10 +208,69 @@
 		69B29CF22B49C6CB00047791 /* HelperClaases */ = {
 			isa = PBXGroup;
 			children = (
+				69C836092B47B51500179FB1 /* Extention UIVIew.swift */,
 				69C836072B47B4FF00179FB1 /* Constants.swift */,
 				69B29CF32B49C6F800047791 /* RoundedButton.swift */,
+				69C19CB12B4A8E5100410E42 /* RoundedImageView.swift */,
+				69C19CB32B4A8F2800410E42 /* RoundedView.swift */,
 			);
 			path = HelperClaases;
+			sourceTree = "<group>";
+		};
+		69B448CE2B4C706B001FE841 /* Calls */ = {
+			isa = PBXGroup;
+			children = (
+				69B448CF2B4C707D001FE841 /* CallsVC.swift */,
+			);
+			path = Calls;
+			sourceTree = "<group>";
+		};
+		69B448D12B4C71A7001FE841 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				69B448D22B4C71B8001FE841 /* ContactsVC.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		69B448D42B4C7338001FE841 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				69B448D52B4C7348001FE841 /* SettingsVC.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		69C19CA82B4A7AB000410E42 /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				6917491B2B4871C900AB7123 /* ButtonsTVC.swift */,
+				6917491A2B4871C900AB7123 /* ButtonsTVC.xib */,
+				691749192B4871C900AB7123 /* SocialTVC.swift */,
+				6917491C2B4871C900AB7123 /* SocialTVC.xib */,
+				6917491E2B4871C900AB7123 /* TextFieldTVC.swift */,
+				6917491D2B4871C900AB7123 /* TextFieldTVC.xib */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		69C19CA92B4A7AD700410E42 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				69C19CAA2B4A7AFE00410E42 /* MessagesVC.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		69C19CAC2B4A8AC400410E42 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				69C19CAD2B4A8AEC00410E42 /* StoriesCVC.swift */,
+				69C19CAE2B4A8AEC00410E42 /* StoriesCVC.xib */,
+				69F1C5EF2B4AF0F00001AFCF /* MesagesListTVC.swift */,
+				69F1C5F02B4AF0F00001AFCF /* MesagesListTVC.xib */,
+			);
+			path = Messages;
 			sourceTree = "<group>";
 		};
 		69C8360B2B47BA1700179FB1 /* StoryBoards */ = {
@@ -270,7 +348,9 @@
 				69B29CF62B49D13000047791 /* Poppins-Regular.ttf in Resources */,
 				69C8360F2B47BABA00179FB1 /* Calls.storyboard in Resources */,
 				69C836132B47BAD000179FB1 /* Settings.storyboard in Resources */,
+				69C19CB02B4A8AEC00410E42 /* StoriesCVC.xib in Resources */,
 				69C8360D2B47BAB100179FB1 /* Message.storyboard in Resources */,
+				69F1C5F22B4AF0F00001AFCF /* MesagesListTVC.xib in Resources */,
 				69C836062B47B4BC00179FB1 /* TabBarView.xib in Resources */,
 				69B29CFB2B49D17600047791 /* Poppins-Bold.ttf in Resources */,
 				691749122B486DE000AB7123 /* Main.storyboard in Resources */,
@@ -296,19 +376,27 @@
 				691749162B486DE000AB7123 /* WalkThroughVC.swift in Sources */,
 				691749242B4871C900AB7123 /* TextFieldTVC.swift in Sources */,
 				691749132B486DE000AB7123 /* SignupVC.swift in Sources */,
+				69C19CAB2B4A7AFE00410E42 /* MessagesVC.swift in Sources */,
 				69B29CF12B49C5F100047791 /* AboutMeTVC.swift in Sources */,
 				691749212B4871C900AB7123 /* ButtonsTVC.swift in Sources */,
+				69B448D02B4C707D001FE841 /* CallsVC.swift in Sources */,
+				69C19CAF2B4A8AEC00410E42 /* StoriesCVC.swift in Sources */,
 				69C8360A2B47B51500179FB1 /* Extention UIVIew.swift in Sources */,
 				694A1ACD2B49D8E300BC771A /* KPNavigationViewController.swift in Sources */,
 				69C836042B47B47C00179FB1 /* KpTabBarVC.swift in Sources */,
+				69B448D62B4C7348001FE841 /* SettingsVC.swift in Sources */,
 				69AE05272B471D2100D0C162 /* TextIt.xcdatamodeld in Sources */,
+				69B448D32B4C71B8001FE841 /* ContactsVC.swift in Sources */,
 				691749172B486DE000AB7123 /* ParentVC.swift in Sources */,
 				69B29CF42B49C6F800047791 /* RoundedButton.swift in Sources */,
 				691749182B486DE000AB7123 /* LoginVC.swift in Sources */,
+				69F1C5F12B4AF0F00001AFCF /* MesagesListTVC.swift in Sources */,
 				69AE051D2B471D2100D0C162 /* AppDelegate.swift in Sources */,
 				69AE051F2B471D2100D0C162 /* SceneDelegate.swift in Sources */,
 				6917491F2B4871C900AB7123 /* SocialTVC.swift in Sources */,
 				69C836082B47B4FF00179FB1 /* Constants.swift in Sources */,
+				69C19CB42B4A8F2800410E42 /* RoundedView.swift in Sources */,
+				69C19CB22B4A8E5100410E42 /* RoundedImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

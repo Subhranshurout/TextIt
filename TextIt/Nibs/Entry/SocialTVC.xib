@@ -38,8 +38,8 @@
                                         <color key="textColor" name="TitleColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back! Sign in using your social account or email to continue us" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOI-QH-diZ">
-                                        <rect key="frame" x="26" y="53.666666666666657" width="579.33333333333337" height="44"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back! Sign in using your social account or email to continue us" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOI-QH-diZ">
+                                        <rect key="frame" x="26" y="53.666666666666657" width="282" height="44"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                         <color key="textColor" name="preViewWhite"/>
@@ -116,7 +116,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2a-fk-Oun">
-                                                <rect key="frame" x="20.000000000000007" y="21.333333333333314" width="124.66666666666669" height="1"/>
+                                                <rect key="frame" x="30.000000000000007" y="21.333333333333314" width="114.66666666666669" height="1"/>
                                                 <color key="backgroundColor" name="BtnWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="82u-NP-6vI"/>
@@ -126,7 +126,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZF-VO-fBS">
-                                                <rect key="frame" x="189.66666666666666" y="21.333333333333314" width="124.33333333333334" height="1"/>
+                                                <rect key="frame" x="189.66666666666666" y="21.333333333333314" width="114.33333333333334" height="1"/>
                                                 <color key="backgroundColor" name="BtnWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="6Ke-vU-hYF"/>
@@ -138,12 +138,12 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="wZF-VO-fBS" secondAttribute="trailing" constant="20" id="553-lY-uUe"/>
+                                            <constraint firstAttribute="trailing" secondItem="wZF-VO-fBS" secondAttribute="trailing" constant="30" id="553-lY-uUe"/>
                                             <constraint firstItem="Cia-ZI-WWA" firstAttribute="centerX" secondItem="G7B-Qe-hHF" secondAttribute="centerX" id="N0p-mZ-ahA"/>
                                             <constraint firstItem="l2a-fk-Oun" firstAttribute="centerY" secondItem="Cia-ZI-WWA" secondAttribute="centerY" id="O58-Zj-oQf"/>
                                             <constraint firstItem="Cia-ZI-WWA" firstAttribute="centerY" secondItem="G7B-Qe-hHF" secondAttribute="centerY" id="P8w-y9-VKS"/>
                                             <constraint firstItem="wZF-VO-fBS" firstAttribute="leading" secondItem="Cia-ZI-WWA" secondAttribute="trailing" id="Ujn-6d-WoQ"/>
-                                            <constraint firstItem="l2a-fk-Oun" firstAttribute="leading" secondItem="G7B-Qe-hHF" secondAttribute="leading" constant="20" id="ew1-2v-gQv"/>
+                                            <constraint firstItem="l2a-fk-Oun" firstAttribute="leading" secondItem="G7B-Qe-hHF" secondAttribute="leading" constant="30" id="ew1-2v-gQv"/>
                                             <constraint firstItem="wZF-VO-fBS" firstAttribute="centerY" secondItem="Cia-ZI-WWA" secondAttribute="centerY" id="kep-Yc-n7t"/>
                                             <constraint firstItem="Cia-ZI-WWA" firstAttribute="leading" secondItem="l2a-fk-Oun" secondAttribute="trailing" id="u80-MU-Gby"/>
                                         </constraints>
@@ -187,6 +187,8 @@
             <connections>
                 <outlet property="aboutPreVwLbl" destination="nOI-QH-diZ" id="HBr-Xy-hsv"/>
                 <outlet property="orLbl" destination="Cia-ZI-WWA" id="JTP-3h-W9h"/>
+                <outlet property="orLblView" destination="G7B-Qe-hHF" id="apy-34-eLk"/>
+                <outlet property="socialView" destination="Kds-Kr-SQT" id="U3B-dD-POU"/>
                 <outlet property="stackView" destination="zTM-aC-p8E" id="MyK-iw-pDt"/>
                 <outlet property="titleLbl" destination="0OH-tQ-YB7" id="pHS-MZ-vwy"/>
                 <outletCollection property="soocialMediaBtn" destination="DRa-bu-3IH" collectionClass="NSMutableArray" id="B4A-KG-ajh"/>

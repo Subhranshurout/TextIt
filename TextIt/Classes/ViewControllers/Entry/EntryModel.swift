@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum EntryScreenType {
     case splash ,logIn , signUp
@@ -80,4 +81,24 @@ enum EntryCellType {
             return 100
         }
     }
+    
+    var keyboardType: UIKeyboardType {
+        switch self {
+            case .email :
+                return .emailAddress
+        case .password, .confPassword:
+                return .numberPad
+            default:
+                return .asciiCapable
+        }
+    }
+    
+    var returnKeyType: UIReturnKeyType{
+        switch self {
+        case .confPassword,.password :
+            return .done
+            default: return .next
+        }
+    }
+    
 }

@@ -14,6 +14,8 @@ class SocialTVC: UITableViewCell {
     @IBOutlet var soocialMediaBtn : [UIButton]!
     @IBOutlet var orLbl : UILabel!
     @IBOutlet var aboutPreVwLbl : UILabel!
+    @IBOutlet var socialView : UIView!
+    @IBOutlet var orLblView : UIView!
     
     @IBOutlet var lineLbl : [UILabel]!
     weak var parentVC: ParentVC!
@@ -49,6 +51,14 @@ class SocialTVC: UITableViewCell {
                 }
             }
             
+        case parentVC as SignupVC :
+            titleLbl.text = "Sign up with Email"
+            aboutPreVwLbl.text = "Get chatting with friends and\nfamily today by signing up for our chat app!"
+            aboutPreVwLbl.textAlignment = .center
+            aboutPreVwLbl.textColor = UIColor.aboutPreView
+            aboutPreVwLbl.font = UIFont(name: "Poppins-Light", size: 14)
+            socialView.isHidden = true
+            orLblView.isHidden = true
         default:
             print("Not")
         }
