@@ -22,6 +22,8 @@
 		691749232B4871C900AB7123 /* TextFieldTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6917491D2B4871C900AB7123 /* TextFieldTVC.xib */; };
 		691749242B4871C900AB7123 /* TextFieldTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6917491E2B4871C900AB7123 /* TextFieldTVC.swift */; };
 		694A1ACD2B49D8E300BC771A /* KPNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A1ACC2B49D8E300BC771A /* KPNavigationViewController.swift */; };
+		699F3BA02B4DAEF900B23C15 /* CallsListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699F3B9E2B4DAEF900B23C15 /* CallsListTVC.swift */; };
+		699F3BA12B4DAEF900B23C15 /* CallsListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 699F3B9F2B4DAEF900B23C15 /* CallsListTVC.xib */; };
 		69AE051D2B471D2100D0C162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AE051C2B471D2100D0C162 /* AppDelegate.swift */; };
 		69AE051F2B471D2100D0C162 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AE051E2B471D2100D0C162 /* SceneDelegate.swift */; };
 		69AE05272B471D2100D0C162 /* TextIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69AE05252B471D2100D0C162 /* TextIt.xcdatamodeld */; };
@@ -69,6 +71,8 @@
 		6917491D2B4871C900AB7123 /* TextFieldTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldTVC.xib; sourceTree = "<group>"; };
 		6917491E2B4871C900AB7123 /* TextFieldTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTVC.swift; sourceTree = "<group>"; };
 		694A1ACC2B49D8E300BC771A /* KPNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KPNavigationViewController.swift; sourceTree = "<group>"; };
+		699F3B9E2B4DAEF900B23C15 /* CallsListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsListTVC.swift; sourceTree = "<group>"; };
+		699F3B9F2B4DAEF900B23C15 /* CallsListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallsListTVC.xib; sourceTree = "<group>"; };
 		69AE05192B471D2100D0C162 /* TextIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69AE051C2B471D2100D0C162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69AE051E2B471D2100D0C162 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +162,15 @@
 			path = Entry;
 			sourceTree = "<group>";
 		};
+		699F3B9D2B4DAED700B23C15 /* Calls */ = {
+			isa = PBXGroup;
+			children = (
+				699F3B9E2B4DAEF900B23C15 /* CallsListTVC.swift */,
+				699F3B9F2B4DAEF900B23C15 /* CallsListTVC.xib */,
+			);
+			path = Calls;
+			sourceTree = "<group>";
+		};
 		69AE05102B471D2100D0C162 = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +210,7 @@
 		69AE05332B471D3A00D0C162 /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
+				699F3B9D2B4DAED700B23C15 /* Calls */,
 				69C836032B47B47C00179FB1 /* KpTabBarVC.swift */,
 				69C836052B47B4BC00179FB1 /* TabBarView.xib */,
 				69C19CA82B4A7AB000410E42 /* Entry */,
@@ -352,6 +366,7 @@
 				69C8360D2B47BAB100179FB1 /* Message.storyboard in Resources */,
 				69F1C5F22B4AF0F00001AFCF /* MesagesListTVC.xib in Resources */,
 				69C836062B47B4BC00179FB1 /* TabBarView.xib in Resources */,
+				699F3BA12B4DAEF900B23C15 /* CallsListTVC.xib in Resources */,
 				69B29CFB2B49D17600047791 /* Poppins-Bold.ttf in Resources */,
 				691749122B486DE000AB7123 /* Main.storyboard in Resources */,
 				6917490A2B48690B00AB7123 /* Poppins-Medium.ttf in Resources */,
@@ -382,6 +397,7 @@
 				69B448D02B4C707D001FE841 /* CallsVC.swift in Sources */,
 				69C19CAF2B4A8AEC00410E42 /* StoriesCVC.swift in Sources */,
 				69C8360A2B47B51500179FB1 /* Extention UIVIew.swift in Sources */,
+				699F3BA02B4DAEF900B23C15 /* CallsListTVC.swift in Sources */,
 				694A1ACD2B49D8E300BC771A /* KPNavigationViewController.swift in Sources */,
 				69C836042B47B47C00179FB1 /* KpTabBarVC.swift in Sources */,
 				69B448D62B4C7348001FE841 /* SettingsVC.swift in Sources */,

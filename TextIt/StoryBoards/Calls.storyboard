@@ -14,10 +14,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--ParentVC-->
+        <!--CallsVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="ParentVC" customModule="TextIt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="CallsVC" customModule="TextIt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,11 +77,23 @@
                                             <constraint firstAttribute="height" constant="5" id="coA-BP-dqf"/>
                                         </constraints>
                                     </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EjJ-FG-MHi">
+                                        <rect key="frame" x="0.0" y="35" width="393" height="644"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Y6W-OH-hqX" id="95m-dp-v9S"/>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="uBV-en-D1u"/>
+                                        </connections>
+                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="EjJ-FG-MHi" firstAttribute="leading" secondItem="J2x-n1-yPH" secondAttribute="leading" id="7ct-Ka-Tl9"/>
                                     <constraint firstItem="11q-Cg-Skv" firstAttribute="centerX" secondItem="J2x-n1-yPH" secondAttribute="centerX" id="Fry-15-cZY"/>
+                                    <constraint firstAttribute="trailing" secondItem="EjJ-FG-MHi" secondAttribute="trailing" id="MyF-uc-g1c"/>
                                     <constraint firstItem="11q-Cg-Skv" firstAttribute="top" secondItem="J2x-n1-yPH" secondAttribute="top" constant="15" id="VE6-0N-0xk"/>
+                                    <constraint firstItem="EjJ-FG-MHi" firstAttribute="top" secondItem="J2x-n1-yPH" secondAttribute="top" constant="35" id="ZNC-uN-ttW"/>
+                                    <constraint firstAttribute="bottom" secondItem="EjJ-FG-MHi" secondAttribute="bottom" id="y0z-6X-bn3"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -103,6 +115,7 @@
                     </view>
                     <connections>
                         <outlet property="mainView" destination="J2x-n1-yPH" id="YCN-pf-AUA"/>
+                        <outlet property="myTable" destination="EjJ-FG-MHi" id="Zwa-H5-Wjv"/>
                         <outlet property="roundView" destination="11q-Cg-Skv" id="byJ-sY-vn6"/>
                     </connections>
                 </viewController>

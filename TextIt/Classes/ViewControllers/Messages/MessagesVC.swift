@@ -16,7 +16,7 @@ class MessagesVC: ParentVC {
         prepareUI()
         myCollectionView.contentInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
         myTable.contentInset = UIEdgeInsets(top: -8, left: 0, bottom: 70, right: 0)
-        myTable.layer.cornerRadius = 0
+        
     }
     func prepareUI() {
         StoriesCVC.prepareToRegisterCells(myCollectionView)

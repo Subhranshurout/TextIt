@@ -69,7 +69,15 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2O3-8c-FTb" secondAttribute="trailing" id="4dO-Ip-qSy"/>
+                                    <constraint firstItem="ZpW-7n-VIm" firstAttribute="leading" secondItem="RRo-Mj-Tbz" secondAttribute="leading" id="7Jf-gu-OtN"/>
+                                    <constraint firstAttribute="bottom" secondItem="2O3-8c-FTb" secondAttribute="bottom" id="DXl-am-N0d"/>
                                     <constraint firstAttribute="height" constant="20" id="XIE-Fc-eqv"/>
+                                    <constraint firstItem="2O3-8c-FTb" firstAttribute="leading" secondItem="ZpW-7n-VIm" secondAttribute="trailing" constant="3" id="Zs5-sD-DFS"/>
+                                    <constraint firstItem="ZpW-7n-VIm" firstAttribute="top" secondItem="RRo-Mj-Tbz" secondAttribute="top" id="bJY-5N-3I5"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZpW-7n-VIm" secondAttribute="bottom" id="ed0-uc-Qs6"/>
+                                    <constraint firstItem="2O3-8c-FTb" firstAttribute="top" secondItem="RRo-Mj-Tbz" secondAttribute="top" id="nmc-GG-90N"/>
+                                    <constraint firstItem="2O3-8c-FTb" firstAttribute="leading" secondItem="ZpW-7n-VIm" secondAttribute="trailing" constant="3" id="uET-jA-xyA"/>
                                 </constraints>
                             </stackView>
                         </subviews>
