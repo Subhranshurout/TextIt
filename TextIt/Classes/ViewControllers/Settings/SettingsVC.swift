@@ -11,19 +11,25 @@ class SettingsVC: ParentVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        prepareUI()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func prepareUI() {
+        SettingsHeaderTVC.prepareToRegisterCells(myTable)
+        SettingsItemsCell.prepareToRegisterCells(myTable)
     }
-    */
+}
 
+extension SettingsVC : UITableViewDelegate , UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return section == 0 ? 1 : 15
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return indexPath.section == 0 ? tableView.dequeueReusableCell(withIdentifier: "SettingsHeaderTVC", for: indexPath) : tableView.dequeueReusableCell(withIdentifier: "SettingsItemsCell", for: indexPath)
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return indexPath.section == 0 ? 80 : 76
+    }
 }

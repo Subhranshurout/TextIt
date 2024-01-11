@@ -14,10 +14,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--ParentVC-->
+        <!--SettingsVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="ParentVC" customModule="TextIt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="SettingsVC" customModule="TextIt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,7 +39,7 @@
                                         <state key="normal" image="Vector 190"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Euy-4v-l7U">
-                                        <rect key="frame" x="131.66666666666666" y="11" width="82" height="28"/>
+                                        <rect key="frame" x="135.66666666666666" y="13.333333333333327" width="73.666666666666657" height="23.333333333333329"/>
                                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -65,11 +65,23 @@
                                             <constraint firstAttribute="height" constant="5" id="cp4-Wl-0jZ"/>
                                         </constraints>
                                     </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xvx-eb-QcT">
+                                        <rect key="frame" x="0.0" y="35" width="393" height="678"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Y6W-OH-hqX" id="1c8-Dm-lbA"/>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="wi3-UI-JVZ"/>
+                                        </connections>
+                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="OX5-Nt-wpl" firstAttribute="top" secondItem="Dxu-O4-WLT" secondAttribute="top" constant="15" id="8IU-IA-Tsz"/>
+                                    <constraint firstItem="xvx-eb-QcT" firstAttribute="top" secondItem="Dxu-O4-WLT" secondAttribute="top" constant="35" id="Cma-Ng-ZYE"/>
+                                    <constraint firstAttribute="bottom" secondItem="xvx-eb-QcT" secondAttribute="bottom" id="GHF-MO-ucq"/>
+                                    <constraint firstItem="xvx-eb-QcT" firstAttribute="leading" secondItem="Dxu-O4-WLT" secondAttribute="leading" id="UPj-5p-IRV"/>
                                     <constraint firstItem="OX5-Nt-wpl" firstAttribute="centerX" secondItem="Dxu-O4-WLT" secondAttribute="centerX" id="Xbp-Eo-ECI"/>
+                                    <constraint firstAttribute="trailing" secondItem="xvx-eb-QcT" secondAttribute="trailing" id="dg0-qH-6b3"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -91,6 +103,7 @@
                     </view>
                     <connections>
                         <outlet property="mainView" destination="Dxu-O4-WLT" id="OhD-Pc-6GN"/>
+                        <outlet property="myTable" destination="xvx-eb-QcT" id="eHr-dO-FCP"/>
                         <outlet property="roundView" destination="OX5-Nt-wpl" id="h2L-jq-kO3"/>
                     </connections>
                 </viewController>

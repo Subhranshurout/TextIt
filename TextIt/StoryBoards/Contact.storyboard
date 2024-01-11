@@ -77,10 +77,22 @@
                                             <constraint firstAttribute="width" constant="30" id="VDR-xo-gfb"/>
                                         </constraints>
                                     </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="N0g-Ys-JJF">
+                                        <rect key="frame" x="0.0" y="35" width="393" height="678"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Y6W-OH-hqX" id="m1R-Q3-AWU"/>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="Bg6-ZT-vuV"/>
+                                        </connections>
+                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="cvP-iC-nFW" firstAttribute="centerX" secondItem="Af2-6O-j08" secondAttribute="centerX" id="J65-hR-eD9"/>
+                                    <constraint firstItem="N0g-Ys-JJF" firstAttribute="top" secondItem="Af2-6O-j08" secondAttribute="top" constant="35" id="Q2N-TS-dc9"/>
+                                    <constraint firstAttribute="bottom" secondItem="N0g-Ys-JJF" secondAttribute="bottom" id="RSY-kv-ChN"/>
+                                    <constraint firstAttribute="trailing" secondItem="N0g-Ys-JJF" secondAttribute="trailing" id="g4N-6L-YUz"/>
+                                    <constraint firstItem="N0g-Ys-JJF" firstAttribute="leading" secondItem="Af2-6O-j08" secondAttribute="leading" id="naY-z4-vOg"/>
                                     <constraint firstItem="cvP-iC-nFW" firstAttribute="top" secondItem="Af2-6O-j08" secondAttribute="top" constant="15" id="wRh-2p-J6Q"/>
                                 </constraints>
                             </view>
@@ -103,6 +115,7 @@
                     </view>
                     <connections>
                         <outlet property="mainView" destination="Af2-6O-j08" id="CKa-q5-s6Y"/>
+                        <outlet property="myTable" destination="N0g-Ys-JJF" id="hPX-Gw-Q4g"/>
                         <outlet property="roundView" destination="cvP-iC-nFW" id="bti-sh-kii"/>
                     </connections>
                 </viewController>

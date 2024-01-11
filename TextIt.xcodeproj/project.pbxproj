@@ -53,6 +53,12 @@
 		69C836132B47BAD000179FB1 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69C836122B47BAD000179FB1 /* Settings.storyboard */; };
 		69F1C5F12B4AF0F00001AFCF /* MesagesListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F1C5EF2B4AF0F00001AFCF /* MesagesListTVC.swift */; };
 		69F1C5F22B4AF0F00001AFCF /* MesagesListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F1C5F02B4AF0F00001AFCF /* MesagesListTVC.xib */; };
+		69FE09E32B4F995E001D0A40 /* ContactsListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE09E12B4F995E001D0A40 /* ContactsListTVC.swift */; };
+		69FE09E42B4F995E001D0A40 /* ContactsListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FE09E22B4F995E001D0A40 /* ContactsListTVC.xib */; };
+		69FE09E82B4FA351001D0A40 /* SettingsHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE09E62B4FA351001D0A40 /* SettingsHeaderTVC.swift */; };
+		69FE09E92B4FA351001D0A40 /* SettingsHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FE09E72B4FA351001D0A40 /* SettingsHeaderTVC.xib */; };
+		69FE09EC2B4FA616001D0A40 /* SettingsItemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE09EA2B4FA616001D0A40 /* SettingsItemsCell.swift */; };
+		69FE09ED2B4FA616001D0A40 /* SettingsItemsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FE09EB2B4FA616001D0A40 /* SettingsItemsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +110,12 @@
 		69C836122B47BAD000179FB1 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		69F1C5EF2B4AF0F00001AFCF /* MesagesListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesagesListTVC.swift; sourceTree = "<group>"; };
 		69F1C5F02B4AF0F00001AFCF /* MesagesListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MesagesListTVC.xib; sourceTree = "<group>"; };
+		69FE09E12B4F995E001D0A40 /* ContactsListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListTVC.swift; sourceTree = "<group>"; };
+		69FE09E22B4F995E001D0A40 /* ContactsListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactsListTVC.xib; sourceTree = "<group>"; };
+		69FE09E62B4FA351001D0A40 /* SettingsHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHeaderTVC.swift; sourceTree = "<group>"; };
+		69FE09E72B4FA351001D0A40 /* SettingsHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsHeaderTVC.xib; sourceTree = "<group>"; };
+		69FE09EA2B4FA616001D0A40 /* SettingsItemsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItemsCell.swift; sourceTree = "<group>"; };
+		69FE09EB2B4FA616001D0A40 /* SettingsItemsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsItemsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,11 +222,13 @@
 		69AE05332B471D3A00D0C162 /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
-				699F3B9D2B4DAED700B23C15 /* Calls */,
 				69C836032B47B47C00179FB1 /* KpTabBarVC.swift */,
 				69C836052B47B4BC00179FB1 /* TabBarView.xib */,
 				69C19CA82B4A7AB000410E42 /* Entry */,
 				69C19CAC2B4A8AC400410E42 /* Messages */,
+				699F3B9D2B4DAED700B23C15 /* Calls */,
+				69FE09E02B4F9937001D0A40 /* Contacts */,
+				69FE09E52B4FA2FC001D0A40 /* Setttings */,
 			);
 			path = Nibs;
 			sourceTree = "<group>";
@@ -299,6 +313,26 @@
 			path = StoryBoards;
 			sourceTree = "<group>";
 		};
+		69FE09E02B4F9937001D0A40 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				69FE09E12B4F995E001D0A40 /* ContactsListTVC.swift */,
+				69FE09E22B4F995E001D0A40 /* ContactsListTVC.xib */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		69FE09E52B4FA2FC001D0A40 /* Setttings */ = {
+			isa = PBXGroup;
+			children = (
+				69FE09E62B4FA351001D0A40 /* SettingsHeaderTVC.swift */,
+				69FE09E72B4FA351001D0A40 /* SettingsHeaderTVC.xib */,
+				69FE09EA2B4FA616001D0A40 /* SettingsItemsCell.swift */,
+				69FE09EB2B4FA616001D0A40 /* SettingsItemsCell.xib */,
+			);
+			path = Setttings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -357,10 +391,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69FE09E42B4F995E001D0A40 /* ContactsListTVC.xib in Resources */,
 				69AE052C2B471D2200D0C162 /* LaunchScreen.storyboard in Resources */,
 				69AE05292B471D2200D0C162 /* Assets.xcassets in Resources */,
 				69B29CF62B49D13000047791 /* Poppins-Regular.ttf in Resources */,
 				69C8360F2B47BABA00179FB1 /* Calls.storyboard in Resources */,
+				69FE09E92B4FA351001D0A40 /* SettingsHeaderTVC.xib in Resources */,
 				69C836132B47BAD000179FB1 /* Settings.storyboard in Resources */,
 				69C19CB02B4A8AEC00410E42 /* StoriesCVC.xib in Resources */,
 				69C8360D2B47BAB100179FB1 /* Message.storyboard in Resources */,
@@ -370,6 +406,7 @@
 				69B29CFB2B49D17600047791 /* Poppins-Bold.ttf in Resources */,
 				691749122B486DE000AB7123 /* Main.storyboard in Resources */,
 				6917490A2B48690B00AB7123 /* Poppins-Medium.ttf in Resources */,
+				69FE09ED2B4FA616001D0A40 /* SettingsItemsCell.xib in Resources */,
 				69C836112B47BAC800179FB1 /* Contact.storyboard in Resources */,
 				69B29CFC2B49D17600047791 /* Poppins-Light.ttf in Resources */,
 				69B29CFA2B49D17600047791 /* Poppins-Black.ttf in Resources */,
@@ -402,11 +439,14 @@
 				69C836042B47B47C00179FB1 /* KpTabBarVC.swift in Sources */,
 				69B448D62B4C7348001FE841 /* SettingsVC.swift in Sources */,
 				69AE05272B471D2100D0C162 /* TextIt.xcdatamodeld in Sources */,
+				69FE09E32B4F995E001D0A40 /* ContactsListTVC.swift in Sources */,
 				69B448D32B4C71B8001FE841 /* ContactsVC.swift in Sources */,
 				691749172B486DE000AB7123 /* ParentVC.swift in Sources */,
+				69FE09E82B4FA351001D0A40 /* SettingsHeaderTVC.swift in Sources */,
 				69B29CF42B49C6F800047791 /* RoundedButton.swift in Sources */,
 				691749182B486DE000AB7123 /* LoginVC.swift in Sources */,
 				69F1C5F12B4AF0F00001AFCF /* MesagesListTVC.swift in Sources */,
+				69FE09EC2B4FA616001D0A40 /* SettingsItemsCell.swift in Sources */,
 				69AE051D2B471D2100D0C162 /* AppDelegate.swift in Sources */,
 				69AE051F2B471D2100D0C162 /* SceneDelegate.swift in Sources */,
 				6917491F2B4871C900AB7123 /* SocialTVC.swift in Sources */,
